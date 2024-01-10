@@ -1,0 +1,364 @@
+/* 폰트 */
+
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.all {
+  font-family: 'LINESeedKR-Bd', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+.head-text {
+  font-family: 'Lemon', sans-serif;
+}
+
+/* a태그 */
+
+a {
+  all: unset;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+/* header */
+.head-box {
+  width: 50%;
+  top: 0;
+  left: 0;
+  height: 80px;
+}
+
+.head-text {
+  color: red;
+  margin: 0 20%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+}
+
+.top_text-box {
+  width: 30%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 80px;
+}
+
+.top_text {
+  margin-right: 10px;
+  font-size: 20px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  color: #808080;
+}
+
+/* sub section */
+.sub_main {
+  width: 100%;
+  top: 30px;
+  left: 0;
+  height: 100px;
+}
+
+.text-box {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.text:hover {
+  transform: translate(0, -3px);
+}
+
+/* section banner */
+
+.section_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  list-style: none;
+}
+
+.section_banner {
+  background-color: #f3f4f8;
+  height: 400px;
+  width: 850px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.banner {
+  height: 400px;
+  background-size: cover;
+  background: url(./img/banner.png);
+  background-repeat: no-repeat;
+  background-position: 70% 60%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.40);
+  margin: auto;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+/* section user */
+
+.sec_text_container {
+  height: 0px;
+  width: 236px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+
+.sec_text {
+  height: 0px;
+  width: 236px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  color: white;
+  font-size: 24px;
+}
+
+.section_user {
+  background-color: #F42E3D;
+  margin-left: 30px;
+  height: 400px;
+  width: 380px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.30);
+  border-radius: 20px;
+  position: relative;
+}
+
+.user {
+  background-color: #ffffff;
+  margin-top: 22%;
+  height: 320px;
+  width: 380px;
+  border-radius: 40px 0 20px 20px;
+  position: relative;
+}
+
+.user_text_container {
+  font-size: 25px;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  margin: 0 140px 0;
+}
+
+.user_text {
+  color: black;
+  font-size: 25px;
+  width: auto;
+  text-align: center;
+  margin: 0 0;
+}
+
+.user_prograssbar {
+  border-color: black;
+  border: solid;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+  background-color: #f3f4f8;
+  width: 340px;
+  height: 55px;
+  border-width: 2px;
+  border-radius: 29px;
+  margin: auto;
+  margin-top: 6px;
+}
+
+.user_prograssbar_t {
+  background-color: #F42E3D;
+  margin-top: 0px;
+  width: 166px;
+  height: 51px;
+  border-radius: 29px;
+  z-index: 1;
+  margin-left: 0px;
+}
+
+.done_cou {
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 20% 0;
+}
+
+.user_rank {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 20% 0;
+}
+
+
+.user_text_cou {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 20% 0;
+}
+
+/* info */
+
+.info-containar {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.info-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.info-list li {
+  margin: 10px 0;
+}
+
+.map {
+  background-color: #ffffff;
+  background-size: cover;
+  background: url(./img/img.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 130px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+  height: 130px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.map:hover {
+  background-color: rgb(255, 208, 0);
+  cursor: pointer;
+  transform: translate(0, -5px);
+}
+
+.munjin {
+  background-color: #ffffff;
+  background-size: cover;
+  background: url(./img/img2.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 130px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+  height: 130px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.munjin:hover {
+  background-color: rgb(255, 208, 0);
+  cursor: pointer;
+  transform: translate(0, -5px);
+}
+
+.choi {
+  background-color: #ffffff;
+  background-size: cover;
+  background: url(./img/img3.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 130px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+  height: 130px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.choi:hover {
+  background-color: rgb(255, 208, 0);
+  cursor: pointer;
+  transform: translate(0, -5px);
+}
+
+.qust {
+  background-color: #ffffff;
+  background-size: cover;
+  background: url(./img/img5.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 130px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+  height: 130px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.qust:hover {
+  background-color: rgb(255, 208, 0);
+  cursor: pointer;
+  transform: translate(0, -5px);
+}
+
+.qa {
+  background-color: #ffffff;
+  background-size: cover;
+  background: url(./img/img4.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 130px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.20);
+  height: 130px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.qa:hover {
+  background-color: rgb(255, 208, 0);
+  cursor: pointer;
+  transform: translate(0, -5px);
+}
+
+
+
+/* footer */
+.footer-container {
+  display: flex;
+  width: 100%;
+  height: 190px;
+  border-top: 1px solid rgb(225, 225, 225);
+  background-color: rgb(225, 225, 225);
+}
+
+.footer-text {
+  padding: 0% 5%;
+  align-items: center;
+  color: black;
+}
+
+.footer-text-link {
+  cursor: pointer;
+}
