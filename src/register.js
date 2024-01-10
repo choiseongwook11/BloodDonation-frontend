@@ -1,32 +1,65 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
-import './login.css';
+import { useNavigate } from 'react-router-dom';
+import "./register.css"
 
-function Login() {
-    const navigate = useNavigate()
+function Register() {
+    const navigate = useNavigate();
     const [Email, setEmail] = useState("");
+    const [Username, setUsername] = useState("");
     const [Password, setPassword] = useState("");
+    const [ConfirmPassword, setConfirmPassword] = useState("");
 
     const onEmailHandler = (event) => {
         setEmail(event.currentTarget.value);
+    };
+
+    const onUsernameHandler = (event) => {
+        setUsername(event.currentTarget.value);
     };
 
     const onPasswordHandler = (event) => {
         setPassword(event.currentTarget.value);
     };
 
+    const onConfirmPasswordHandler = (event) => {
+        setConfirmPassword(event.currentTarget.value);
+    };
+
     const onSubmitHandler = (event) => {
         event.preventDefault();
 
-        console.log('Email', Email);
-        console.log('Password', Password);
+        if (Password !== ConfirmPassword) {
+            alert('Passwords do not match');
+            return;
+        }
 
         let body = {
             email: Email,
-            password: Password
+            username: Username,
+            password: Password,
         };
-        // 여기에서 로그인 API를 호출하거나 로그인 처리를 수행합니다.
-        // 예시: axios.post('/api/users/login', body)...
+
+
+        fetch('', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body)
+        })
+            .then(response => {
+                if (response.ok) {
+
+                    navigate('/login');
+                } else {
+
+                    throw new Error('Network response was not ok.');
+                }
+            })
+            .catch(error => {
+
+                console.error("There was an error!", error);
+            });
     };
 
     return (
@@ -48,10 +81,14 @@ function Login() {
                     <form className="form-container" onSubmit={onSubmitHandler}>
                         <label>Email</label>
                         <input type="email" value={Email} onChange={onEmailHandler} />
+                        <label>Username</label>
+                        <input type="text" value={Username} onChange={onUsernameHandler} />
                         <label>Password</label>
                         <input type="password" value={Password} onChange={onPasswordHandler} />
+                        <label>Confirm Password</label>
+                        <input type="password" value={ConfirmPassword} onChange={onConfirmPasswordHandler} />
                         <br />
-                        <button type="submit">로그인</button>
+                        <button type="submit">회원가입</button>
                     </form>
                 </div>
             </section>
@@ -59,4 +96,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default Register;

@@ -12,8 +12,8 @@ function Main() {
           </div>
           <div class="top_text-box">
             <div className="top_text" onClick={() => navigate("/login")}>로그인</div>
-            <div className="top_text">/</div>
-            <div className="top_text">회원가입</div>
+            <div className="top_text">ㅣ</div>
+            <div className="top_text" onClick={() => navigate("/Register")}>회원가입</div>
           </div>
         </div>
       </header>

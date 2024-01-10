@@ -1,0 +1,145 @@
+/* 폰트 */
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.all {
+    font-family: 'LINESeedKR-Bd', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+.head-text {
+    font-family: 'Lemon', sans-serif;
+}
+
+/* a태그 */
+
+a {
+    all: unset;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+/* header */
+.head-box {
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 80px;
+}
+
+.head-text {
+    color: red;
+    margin: 0 20%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.top_text-box {
+    width: 30%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 80px;
+}
+
+.top_text {
+    margin-right: 10px;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+
+/* 전체 페이지에 대한 스타일 */
+body, html {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* 앱 컨테이너 */
+.app-container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* 폼 컨테이너 */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 레이블 */
+.form-container label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #202124;
+    font-size: 14px;
+}
+
+/* 인풋 필드 */
+.form-container input[type="email"],
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container input[type="email"]:focus,
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+    outline: none;
+    border-color: #4285f4;
+    box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+/* 버튼 */
+.form-container button {
+    margin-top: 25px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #1765ce;
+}
+
+/* 추가적인 스타일링 */
+.form-container button:disabled {
+    background-color: #ccc;
+}
+
+.form-container input[type="email"]:invalid,
+.form-container input[type="text"]:invalid,
+.form-container input[type="password"]:invalid {
+    border-color: #d93025;
+}
