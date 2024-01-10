@@ -46,7 +46,7 @@ function Main() {
                 <div className='done_cou'>
                   <div>400ml/1000ml</div>
                 </div>
-                <div className="user_rank">현재 티어 : 실버</div>
+                <div className="user_rank">현재 등급 : 3등급</div>
                 <div className="user_text_cou">헌혈 횟수 : 4회</div>
               </div>
             </li>
