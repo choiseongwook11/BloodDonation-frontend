@@ -17,6 +17,9 @@
     font-family: 'Lemon', sans-serif;
 }
 
+.head-text2 {
+    font-family: 'Lemon', sans-serif;
+}
 /* a태그 */
 
 a {
@@ -41,6 +44,17 @@ a:hover {
 .head-text {
     color: red;
     margin: 0 20%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.head-text2 {
+    color: red;
+    margin: 0 20%;
+    margin-top: -54px;
     height: 100%;
     cursor: pointer;
     font-size: 20px;
@@ -75,7 +89,6 @@ body, html {
 
 /* 앱 컨테이너 */
 .app-container {
-    margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -85,12 +98,14 @@ body, html {
 /* 폼 컨테이너 */
 .form-container {
     display: flex;
+    margin-bottom: 150px;
     flex-direction: column;
 }
 
 /* 레이블 */
 .form-container label {
     margin-top: 15px;
+    display:inline-flex;
     margin-bottom: 5px;
     color: #202124;
     font-size: 14px;
@@ -110,27 +125,28 @@ body, html {
 .form-container input[type="text"]:focus,
 .form-container input[type="password"]:focus {
     outline: none;
-    border-color: #4285f4;
+    border-color: #f44242;
     box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
 }
 
 /* 버튼 */
 .form-container button {
-    margin-top: 25px;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
-    background-color: #1a73e8;
+    background-color: #e81a1a;
     color: white;
     font-size: 14px;
+    width: 342px;
     font-weight: 500;
     letter-spacing: 0.25px;
     cursor: pointer;
+    margin: auto;
     transition: background-color 0.3s;
 }
 
 .form-container button:hover {
-    background-color: #1765ce;
+    background-color: #ce1717;
 }
 
 /* 추가적인 스타일링 */

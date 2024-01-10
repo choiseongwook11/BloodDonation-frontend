@@ -72,13 +72,14 @@ function Register() {
                     <div class="top_text-box">
                         <div className="top_text" onClick={() => navigate("/login")}>로그인</div>
                         <div className="top_text">ㅣ</div>
-                        <div className="top_text" onClick={() => navigate("/Register")}>회원가입</div>
+                        <div className="top_text" onClick={() => navigate("/register")}>회원가입</div>
                     </div>
                 </div>
             </header>
             <section className='all'>
                 <div className="app-container">
                     <form className="form-container" onSubmit={onSubmitHandler}>
+                    <div className="head-text2">BLOOD DONETION</div>
                         <label>Email</label>
                         <input type="email" value={Email} onChange={onEmailHandler} />
                         <label>Username</label>
